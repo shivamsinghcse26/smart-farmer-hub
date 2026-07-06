@@ -1,16 +1,50 @@
-# React + Vite
+# Smart Farmer Hub — Client
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This directory contains the React frontend built with Vite. It provides the UI used by buyers, farmers, and admins.
 
-Currently, two official plugins are available:
+## Tech & Tooling
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- React 18 + Vite
+- CSS with plain files (see `src/App.css`)
+- ESLint configuration in `eslint.config.js`
 
-## React Compiler
+## Local development
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. Install dependencies:
 
-## Expanding the ESLint configuration
+```bash
+cd client
+npm install
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+2. Start the dev server:
+
+```bash
+npm run dev
+```
+
+By default Vite serves the app at `http://localhost:5173`.
+
+## Environment
+
+The frontend expects the backend API base URL to be provided via environment variables at build time. Create a `.env` or set `VITE_API_URL` before starting the dev server, for example:
+
+```bash
+VITE_API_URL=http://localhost:5000
+```
+
+## Production build
+
+```bash
+npm run build
+npm run preview
+```
+
+## Project structure (important files)
+
+- `src/` — React app source
+- `src/component/` — UI components and pages
+- `src/context/Authcontext.jsx` — auth provider
+- `i18next/` — translations
+
+If you want me to add a frontend-specific contributing guide, tests or CI config, I can scaffold that next.
