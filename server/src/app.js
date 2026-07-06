@@ -18,7 +18,7 @@ app.use(cookieParser());
 app.use(
   cors({
     origin: [
-      "https://kishan-setu-8yif.vercel.app",
+      process.env.FRONTEND_URL,
       "http://localhost:5173"
     ],
     credentials: true
