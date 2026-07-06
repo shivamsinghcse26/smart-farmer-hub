@@ -1,0 +1,98 @@
+{
+  "navbar": {
+    "logo": "KishanSetu",
+    "home": "Home",
+    "about": "About",
+    "chatbot":"Chatbot",
+    "services": "Services",
+    "contact": "Contact",
+    "loginRegister": "Login/Register",
+    "language": "Language"
+  },
+  "hero": {
+    "title": "Empowering <span>Farmers</span> for a Sustainable Future",
+    "subtitle": "Bridging traditional wisdom with modern technology to create prosperity for farmers and sustainable food systems for everyone",
+    "exploreServices": "Explore Our Services",
+    "governmentSchemes": "Government Schemes"
+  },
+  "about": {
+    "title": "About <span>FarmerSetu</span>",
+    "description": "We are dedicated to transforming agriculture through innovation, connecting farmers with cutting-edge technology, government support, and sustainable farming practices for a prosperous future."
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "email": "support@farmersetu.com",
+    "phone": "+91 98765 43210",
+    "help": "help@farmersetu.com",
+    "certifications": "Certifications",
+    "quickLinks":"quickLinks",
+    "getInTouch":"getInTouch"
+  },
+  "quickLinks": {
+    
+    "title": "Quick Links",
+    "aboutUs": "About Us",
+    "contactUs": "Contact Us",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "helpCenter": "Help Center"
+    
+  },
+  "certifications": {
+    "title": "Certifications",
+    "iso": "ISO 9001:2015",
+    "isoDesc": "Quality Management System",
+    "organic": "Organic Certified",
+    "organicDesc": "Sustainable Agriculture Practices",
+    "government": "Government Approved",
+    "governmentDesc": "Ministry of Agriculture"
+  },
+  "mission": {
+    "title": "Our Mission",
+    "description": "To revolutionize agriculture by empowering farmers with cutting-edge technology, seamless access to government schemes, and sustainable farming practices that boost productivity while preserving our environment for future generations.",
+    "innovation": "Innovation",
+    "innovationDesc": "Cutting-edge agricultural technology",
+    "support": "Support",
+    "supportDesc": "24/7 farmer assistance & guidance",
+    "sustainability": "Sustainability",
+    "sustainabilityDesc": "Eco-friendly farming solutions"
+  },
+  "stats": {
+    "farmersConnected": "Farmers Connected",
+    "governmentSchemes": "Government Schemes",
+    "statesCovered": "States Covered",
+    "satisfactionRate": "Satisfaction Rate"
+  },
+  "services": {
+    "cropManagement": "Crop Management",
+    "cropManagementDesc": "Smart farming solutions for better yields",
+    "financialAid": "Financial Aid",
+    "financialAidDesc": "Access to loans and subsidies",
+    "digitalTools": "Digital Tools",
+    "digitalToolsDesc": "Modern farming applications",
+    "training": "Training",
+    "trainingDesc": "Educational programs & workshops"
+  },
+  "footer": {
+    "logo": "FarmerSetu",
+    "description": "Empowering farmers with technology and knowledge for sustainable agriculture and improved livelihoods across India.",
+    "quickLinks": "Quick Links",
+    "officeAddress": "Office Address",
+    "headquarters": "FarmerSetu Headquarters",
+    "address1": "Sector 44, Gurugram",
+    "address2": "Haryana 122003, India",
+    "email": "Email",
+    "companyName":"FarmerSetu",
+    "emailValue": "info@farmersetu.com",
+    "copyright": "© 2025 FarmerSetu. All rights reserved.",
+    "aboutUs": "About Us",
+    "contact":"Contact",
+    "helpCenter":"Help Center",
+    "ourServices": "Our Services",
+    "governmentSchemes": "Government Schemes",
+    "careers": "Careers",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "sitemap": "Sitemap"
+  }
+}

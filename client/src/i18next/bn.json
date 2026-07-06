@@ -1,0 +1,96 @@
+{
+  "navbar": {
+    "logo": "কিষাণসেতু",
+    "home": "হোম",
+    "about": "আমাদের সম্পর্কে",
+    "chatbot": "চ্যাটবট",
+    "services": "সেবা",
+    "contact": "যোগাযোগ",
+    "loginRegister": "লগইন / রেজিস্টার",
+    "language": "ভাষা"
+  },
+  "hero": {
+    "title": "একটি টেকসই ভবিষ্যতের জন্য <span>কৃষকদের</span> ক্ষমতায়ন",
+    "subtitle": "ঐতিহ্যবাহী জ্ঞান ও আধুনিক প্রযুক্তির সমন্বয়ে কৃষকদের সমৃদ্ধি এবং সবার জন্য টেকসই খাদ্য ব্যবস্থা গড়ে তোলা",
+    "exploreServices": "আমাদের সেবা দেখুন",
+    "governmentSchemes": "সরকারি প্রকল্প"
+  },
+  "about": {
+    "title": "<span>FarmerSetu</span> সম্পর্কে",
+    "description": "নব创新ের মাধ্যমে কৃষিকে রূপান্তর করা, কৃষকদের আধুনিক প্রযুক্তি, সরকারি সহায়তা এবং টেকসই কৃষি পদ্ধতির সঙ্গে যুক্ত করাই আমাদের লক্ষ্য।"
+  },
+  "contact": {
+    "title": "যোগাযোগ করুন",
+    "email": "support@farmersetu.com",
+    "phone": "+91 98765 43210",
+    "help": "help@farmersetu.com",
+    "certifications": "সার্টিফিকেশন",
+    "quickLinks": "দ্রুত লিঙ্ক",
+    "getInTouch": "যোগাযোগ করুন"
+  },
+  "quickLinks": {
+    "title": "দ্রুত লিঙ্ক",
+    "aboutUs": "আমাদের সম্পর্কে",
+    "contactUs": "যোগাযোগ করুন",
+    "privacyPolicy": "গোপনীয়তা নীতি",
+    "termsOfService": "পরিষেবার শর্তাবলি",
+    "helpCenter": "সহায়তা কেন্দ্র"
+  },
+  "certifications": {
+    "title": "সার্টিফিকেশন",
+    "iso": "ISO 9001:2015",
+    "isoDesc": "গুণমান ব্যবস্থাপনা ব্যবস্থা",
+    "organic": "জৈব সার্টিফাইড",
+    "organicDesc": "টেকসই কৃষি পদ্ধতি",
+    "government": "সরকারি অনুমোদিত",
+    "governmentDesc": "কৃষি মন্ত্রণালয়"
+  },
+  "mission": {
+    "title": "আমাদের লক্ষ্য",
+    "description": "আধুনিক প্রযুক্তি, সরকারি প্রকল্পে সহজ প্রবেশাধিকার এবং উৎপাদনশীলতা বাড়ানো টেকসই কৃষি পদ্ধতির মাধ্যমে কৃষকদের ক্ষমতায়ন করে কৃষিক্ষেত্রে বিপ্লব আনা।",
+    "innovation": "নব创新",
+    "innovationDesc": "আধুনিক কৃষি প্রযুক্তি",
+    "support": "সহায়তা",
+    "supportDesc": "২৪/৭ কৃষক সহায়তা ও দিকনির্দেশনা",
+    "sustainability": "টেকসই উন্নয়ন",
+    "sustainabilityDesc": "পরিবেশবান্ধব কৃষি সমাধান"
+  },
+  "stats": {
+    "farmersConnected": "সংযুক্ত কৃষক",
+    "governmentSchemes": "সরকারি প্রকল্প",
+    "statesCovered": "অন্তর্ভুক্ত রাজ্য",
+    "satisfactionRate": "সন্তুষ্টির হার"
+  },
+  "services": {
+    "cropManagement": "ফসল ব্যবস্থাপনা",
+    "cropManagementDesc": "ভাল ফলনের জন্য স্মার্ট কৃষি সমাধান",
+    "financialAid": "আর্থিক সহায়তা",
+    "financialAidDesc": "ঋণ ও ভর্তুকিতে প্রবেশাধিকার",
+    "digitalTools": "ডিজিটাল সরঞ্জাম",
+    "digitalToolsDesc": "আধুনিক কৃষি অ্যাপ্লিকেশন",
+    "training": "প্রশিক্ষণ",
+    "trainingDesc": "শিক্ষামূলক কর্মসূচি ও কর্মশালা"
+  },
+  "footer": {
+    "logo": "FarmerSetu",
+    "description": "ভারতজুড়ে কৃষকদের টেকসই কৃষি ও উন্নত জীবিকার জন্য প্রযুক্তি ও জ্ঞানের মাধ্যমে ক্ষমতায়ন।",
+    "quickLinks": "দ্রুত লিঙ্ক",
+    "officeAddress": "অফিসের ঠিকানা",
+    "headquarters": "FarmerSetu সদর দপ্তর",
+    "address1": "সেক্টর ৪৪, গুরুগ্রাম",
+    "address2": "হরিয়ানা ১২২০০৩, ভারত",
+    "email": "ইমেইল",
+    "companyName": "FarmerSetu",
+    "emailValue": "info@farmersetu.com",
+    "copyright": "© ২০২৫ FarmerSetu। সর্বস্বত্ব সংরক্ষিত।",
+    "aboutUs": "আমাদের সম্পর্কে",
+    "contact": "যোগাযোগ",
+    "helpCenter": "সহায়তা কেন্দ্র",
+    "ourServices": "আমাদের সেবা",
+    "governmentSchemes": "সরকারি প্রকল্প",
+    "careers": "ক্যারিয়ার",
+    "privacyPolicy": "গোপনীয়তা নীতি",
+    "termsOfService": "পরিষেবার শর্তাবলি",
+    "sitemap": "সাইটম্যাপ"
+  }
+}

@@ -42,13 +42,11 @@ const UserSchema=new mongoose.Schema({
     type: String
   },
 
-  AccessToken: {
-    type: String
-  },
-
   RefreshToken: {
     type: String
   },
+
+  
 
   Role: {
     type: String,
@@ -116,13 +114,13 @@ UserSchema.methods.generateRefreshToken= function(){
 UserSchema.methods.generatePasswordResetToken = function () {
   const resetToken = crypto.randomBytes(20).toString("hex");
 
-  // ✅ store hashed token in DB
+  //  store hashed token in DB
   this.ResetPasswordToken = crypto
     .createHash("sha256")
     .update(resetToken)
     .digest("hex");
 
-  // ✅ token valid for 10 minutes
+  // token valid for 10 minutes
   this.ResetPasswordExpire = Date.now() + 10 * 60 * 1000;
 
   return resetToken; // send raw token to user

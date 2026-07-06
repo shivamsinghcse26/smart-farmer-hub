@@ -4,6 +4,7 @@ import { ApiResponse } from "../Utils/ApiResponse.js";
 import { User } from "../Models/User.model.js";
 import { Crop } from "../Models/Crop.model.js";
 import { Farmer } from "../Models/Farmer.model.js";
+import mongoose from "mongoose";
 // Admin Dashboard Stats
 const getAdminDashboard = AsyncHandler(async (req, res) => {
   const totalUsers = await User.countDocuments();
@@ -30,26 +31,25 @@ const getAllUsers = AsyncHandler(async (req, res) => {
 });
 
 //  Get all crops
-const getAllCrops = async (req, res) => {
-  try {
+const getAllCrops = AsyncHandler(async (req, res) => {
+  
     const crops = await Crop.find()
       .populate("farmerId", "Name"); // fetch only Name field
 
-    res.status(200).json({
-      success: true,
-      data: crops,
-    });
-  } catch (error) {
-    res.status(500).json({
-      success: false,
-      message: "Failed to fetch crops",
-    });
-  }
-};
+    return res.status(200).json(
+      new ApiResponse(200,crops,"All crops fetched")
+     
+    );
+  
+    
+  
+});
 
 // Delete any crop (admin power)
 const deleteCropByAdmin = AsyncHandler(async (req, res) => {
   const { id } = req.params;
+  if(!mongoose.Types.ObjectId.isValid(id))
+   throw new ApiError(400,"Invalid ID")
 
   const crop = await Crop.findByIdAndDelete(id);
   if (!crop) throw new ApiError(404, "Crop not found");
@@ -62,7 +62,9 @@ const deleteCropByAdmin = AsyncHandler(async (req, res) => {
 // block and un-block farmer
 const toggleBlockUser = AsyncHandler(async (req, res) => {
   const { id } = req.params;
-
+if (!mongoose.Types.ObjectId.isValid(id)) {
+  throw new ApiError(400, "Invalid user id");
+}
   const user = await User.findById(id);
   if (!user) throw new ApiError(404, "User not found");
 
@@ -92,7 +94,16 @@ const getAllFarmersForAdmin = AsyncHandler(async (req, res) => {
 //  Approve / Reject Farmer Verification
 const verifyFarmer = AsyncHandler(async (req, res) => {
   const { id } = req.params; // farmer profile id
+  if (!mongoose.Types.ObjectId.isValid(id)) {
+  throw new ApiError(400, "Invalid user id");
+}
   const { verified } = req.body; // true / false
+  if(typeof verified !== "boolean"){
+   throw new ApiError(
+      400,
+      "verified must be true or false"
+   )
+}
 
   const farmers = await Farmer.findById(id);
   if (!farmers) throw new ApiError(404, "Farmer profile not found");

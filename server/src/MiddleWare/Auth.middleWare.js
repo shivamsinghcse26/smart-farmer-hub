@@ -2,10 +2,13 @@ import jwt from "jsonwebtoken";
 import { AsyncHandler } from "../Utils/AsyncHandler.js";
 import { User } from "../Models/User.model.js";
 import { ApiError } from "../Utils/ApiError.js";
+import { ApiResponse } from "../Utils/ApiResponse.js";
 
 export const verifyJWT = AsyncHandler(async (req, res, next) => {
   const token =
-    req.cookies?.accessToken || req.cookies?.AccessToken || req.header("Authorization")?.replace("Bearer ", "");
+    req.cookies?.accessToken ||
+    req.cookies?.AccessToken ||
+    req.header("Authorization")?.replace("Bearer ", "");
 
   if (!token) {
     throw new ApiError(401, "Unauthorized request: token missing");
@@ -19,7 +22,7 @@ export const verifyJWT = AsyncHandler(async (req, res, next) => {
   }
 
   const user = await User.findById(decodedToken?._id).select(
-    "-Password -RefreshToken"
+    "-Password -RefreshToken",
   );
 
   if (!user) {
@@ -35,27 +38,39 @@ export const verifyJWT = AsyncHandler(async (req, res, next) => {
 });
 // refreshToken mechanism
 export const refreshAccessToken = AsyncHandler(async (req, res) => {
-    const incomingRefreshToken = req.cookies.refreshToken;
+  const incomingRefreshToken = req.cookies.refreshToken;
 
-    if (!incomingRefreshToken) {
-        throw new ApiError(401, "Refresh token missing");
-    }
+  if (!incomingRefreshToken) {
+    throw new ApiError(401, "Refresh token missing");
+  }
 
-    const decoded = jwt.verify(
-        incomingRefreshToken,
-        process.env.REFRESH_TOKEN_SECRET
-    );
+  const decoded = jwt.verify(incomingRefreshToken, process.env.REFRESH_TOKEN);
 
-    const user = await User.findById(decoded._id);
+  const user = await User.findById(decoded._id);
 
-    if (!user || user.RefreshToken !== incomingRefreshToken) {
-        throw new ApiError(401, "Invalid refresh token");
-    }
+  if (!user || user.RefreshToken !== incomingRefreshToken) {
+    throw new ApiError(401, "Invalid refresh token");
+  }
 
-    const newAccessToken = user.generateAccessToken();
-
-    return res.status(200).json(
-        new ApiResponse(200, { accessToken: newAccessToken })
-    );
+  const newAccessToken = user.generateAccessToken();
+  const newRefreshToken = user.generateRefreshToken();
+  user.RefreshToken = newRefreshToken;
+await user.save({
+  validateBeforeSave:false
 });
+const isProduction = process.env.NODE_ENV === "production";
+  const options = {
+    httpOnly: true,
+    secure: isProduction,
+    sameSite: isProduction ? "none" : "lax",
+  };
 
+  return (
+    res
+      .status(200)
+      // .cookie("accessToken", accessToken, options)
+      .cookie("refreshToken", newRefreshToken, options)
+
+      .json(new ApiResponse(200, { accessToken: newAccessToken }))
+  );
+});

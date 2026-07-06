@@ -1,10 +1,20 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
+// main.jsx
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter } from "react-router-dom";
+import "./App.css";
+import "./i18next"; // ✅ Must come BEFORE App
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-)
+// Import root app
+import App from "./App.jsx";
+import { AuthProvider, useAuth } from "./context/Authcontext.jsx";
+
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <React.StrictMode>
+    <BrowserRouter>
+    <AuthProvider>
+      <App />
+    </AuthProvider>
+    </BrowserRouter>
+  </React.StrictMode>
+);

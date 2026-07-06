@@ -64,7 +64,7 @@ const register= AsyncHandler(async(req,res,next)=>{
         const avatarUpload=await uploadonCloudinary(AvatarLocalPath);
         avatarUrl=avatarUpload?.url || ""
     }
-    console.log("aaa",avatarUrl)
+    
 
     const createUser=await User.create(
         {

@@ -4,20 +4,18 @@ import { User } from "../Models/User.model.js";
 import { AsyncHandler } from "../Utils/AsyncHandler.js";
 import { ApiError } from "../Utils/ApiError.js";
 import { ApiResponse } from "../Utils/ApiResponse.js";
-import dotenv from "dotenv";
-dotenv.config();
 
-/* =========================================================
-   BREVO EMAIL CLIENT (API — NOT SMTP)
-========================================================= */
+
+
+ //  BREVO EMAIL CLIENT (API — NOT SMTP)
+
 const client = SibApiV3Sdk.ApiClient.instance;
 client.authentications["api-key"].apiKey = process.env.BREVO_API_KEY;
 
 const emailApi = new SibApiV3Sdk.TransactionalEmailsApi();
 
-/* =========================================================
-   FORGOT PASSWORD
-========================================================= */
+   //FORGOT PASSWORD
+
 const forgotPassword = AsyncHandler(async (req, res) => {
   const { EmailId } = req.body;
 
@@ -79,9 +77,8 @@ If you did not request this, please ignore this email.
   }
 });
 
-/* =========================================================
-   RESET PASSWORD
-========================================================= */
+  // RESET PASSWORD
+
 const resetPassword = AsyncHandler(async (req, res) => {
   const { token } = req.params;
   const { newPassword, confirmPassword } = req.body;
@@ -119,9 +116,7 @@ const resetPassword = AsyncHandler(async (req, res) => {
   );
 });
 
-/* =========================================================
-   GET CURRENT USER
-========================================================= */
+//get curremt user
 const getCurrentUser = AsyncHandler(async (req, res) => {
   return res.status(200).json(
     new ApiResponse(

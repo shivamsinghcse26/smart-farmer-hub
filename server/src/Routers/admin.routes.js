@@ -14,16 +14,20 @@ import {
 
 const router = Router();
 
-// ✅ All Admin routes protected
+//  All Admin routes protected
 router.get("/dashboard", verifyJWT, requireRole("admin"), getAdminDashboard);
-router.get("/users", verifyJWT, requireRole("admin"), getAllUsers);
+
+router.get("/farmers", verifyJWT, requireRole("admin"), getAllFarmersForAdmin);
+//  Farmer verification
+router.put("/farmers/:id/verify", verifyJWT, requireRole("admin"), verifyFarmer);
+
 router.get("/crops", verifyJWT, requireRole("admin"), getAllCrops);
 router.delete("/crops/:id", verifyJWT, requireRole("admin"), deleteCropByAdmin);
 
+
+router.get("/users", verifyJWT, requireRole("admin"), getAllUsers);
 router.put("/users/:id/block", verifyJWT, requireRole("admin"), toggleBlockUser);
-// ✅ Farmer verification
-router.get("/farmers", verifyJWT, requireRole("admin"), getAllFarmersForAdmin);
-router.put("/farmers/:id/verify", verifyJWT, requireRole("admin"), verifyFarmer);
+
 
 
 export default router;

@@ -4,7 +4,7 @@ import { getCurrentUser,forgotPassword, resetPassword } from "../Controllers/Aut
 
 const router = Router();
 
-// ✅ This route checks login session
+//  This route checks login session
 router.get("/me", verifyJWT, getCurrentUser);
 
 router.post("/forgot-password", forgotPassword);

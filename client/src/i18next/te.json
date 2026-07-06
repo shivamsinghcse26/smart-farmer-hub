@@ -1,0 +1,96 @@
+{
+  "navbar": {
+    "logo": "కిషాన్ సేతు",
+    "home": "హోమ్",
+    "about": "మా గురించి",
+    "chatbot": "చాట్‌బాట్",
+    "services": "సేవలు",
+    "contact": "సంప్రదించండి",
+    "loginRegister": "లాగిన్ / నమోదు",
+    "language": "భాష"
+  },
+  "hero": {
+    "title": "స్థిరమైన భవిష్యత్తు కోసం <span>రైతులను</span> సాధికారితం చేయడం",
+    "subtitle": "సాంప్రదాయ జ్ఞానాన్ని ఆధునిక సాంకేతికతతో అనుసంధానించి రైతులకు సమృద్ధి మరియు అందరికీ స్థిరమైన ఆహార వ్యవస్థలను సృష్టించడం",
+    "exploreServices": "మా సేవలను అన్వేషించండి",
+    "governmentSchemes": "ప్రభుత్వ పథకాలు"
+  },
+  "about": {
+    "title": "<span>FarmerSetu</span> గురించి",
+    "description": "నవీనత ద్వారా వ్యవసాయాన్ని మారుస్తూ, రైతులను అత్యాధునిక సాంకేతికత, ప్రభుత్వ మద్దతు మరియు స్థిరమైన వ్యవసాయ పద్ధతులతో అనుసంధానించేందుకు మేము కట్టుబడి ఉన్నాము."
+  },
+  "contact": {
+    "title": "సంప్రదించండి",
+    "email": "support@farmersetu.com",
+    "phone": "+91 98765 43210",
+    "help": "help@farmersetu.com",
+    "certifications": "ధృవపత్రాలు",
+    "quickLinks": "త్వరిత లింకులు",
+    "getInTouch": "సంప్రదించండి"
+  },
+  "quickLinks": {
+    "title": "త్వరిత లింకులు",
+    "aboutUs": "మా గురించి",
+    "contactUs": "సంప్రదించండి",
+    "privacyPolicy": "గోప్యతా విధానం",
+    "termsOfService": "సేవా నిబంధనలు",
+    "helpCenter": "సహాయ కేంద్రం"
+  },
+  "certifications": {
+    "title": "ధృవపత్రాలు",
+    "iso": "ISO 9001:2015",
+    "isoDesc": "నాణ్యత నిర్వహణ వ్యవస్థ",
+    "organic": "సేంద్రీయ ధృవీకరణ",
+    "organicDesc": "స్థిరమైన వ్యవసాయ పద్ధతులు",
+    "government": "ప్రభుత్వ ఆమోదం",
+    "governmentDesc": "వ్యవసాయ మంత్రిత్వ శాఖ"
+  },
+  "mission": {
+    "title": "మా లక్ష్యం",
+    "description": "రైతులను అత్యాధునిక సాంకేతికత, ప్రభుత్వ పథకాలపై సులభమైన ప్రాప్యత మరియు ఉత్పాదకతను పెంచే స్థిరమైన వ్యవసాయ పద్ధతులతో సాధికారితం చేసి వ్యవసాయ రంగంలో విప్లవం తీసుకురావడం.",
+    "innovation": "నవీనత",
+    "innovationDesc": "అత్యాధునిక వ్యవసాయ సాంకేతికత",
+    "support": "మద్దతు",
+    "supportDesc": "24/7 రైతు సహాయం మరియు మార్గనిర్దేశం",
+    "sustainability": "స్థిరత్వం",
+    "sustainabilityDesc": "పర్యావరణ అనుకూల వ్యవసాయ పరిష్కారాలు"
+  },
+  "stats": {
+    "farmersConnected": "అనుసంధానమైన రైతులు",
+    "governmentSchemes": "ప్రభుత్వ పథకాలు",
+    "statesCovered": "కవర్ చేసిన రాష్ట్రాలు",
+    "satisfactionRate": "సంతృప్తి రేటు"
+  },
+  "services": {
+    "cropManagement": "పంట నిర్వహణ",
+    "cropManagementDesc": "మెరుగైన దిగుబడులకు స్మార్ట్ వ్యవసాయ పరిష్కారాలు",
+    "financialAid": "ఆర్థిక సహాయం",
+    "financialAidDesc": "రుణాలు మరియు సబ్సిడీలకు ప్రాప్యత",
+    "digitalTools": "డిజిటల్ సాధనాలు",
+    "digitalToolsDesc": "ఆధునిక వ్యవసాయ అనువర్తనాలు",
+    "training": "శిక్షణ",
+    "trainingDesc": "విద్యా కార్యక్రమాలు మరియు వర్క్‌షాప్‌లు"
+  },
+  "footer": {
+    "logo": "FarmerSetu",
+    "description": "భారతదేశం అంతటా రైతులను స్థిరమైన వ్యవసాయం మరియు మెరుగైన జీవనోపాధి కోసం సాంకేతికత మరియు జ్ఞానంతో సాధికారితం చేయడం.",
+    "quickLinks": "త్వరిత లింకులు",
+    "officeAddress": "కార్యాలయ చిరునామా",
+    "headquarters": "FarmerSetu ప్రధాన కార్యాలయం",
+    "address1": "సెక్టర్ 44, గురుగ్రామ్",
+    "address2": "హర్యానా 122003, భారతదేశం",
+    "email": "ఇమెయిల్",
+    "companyName": "FarmerSetu",
+    "emailValue": "info@farmersetu.com",
+    "copyright": "© 2025 FarmerSetu. అన్ని హక్కులు పరిరక్షించబడినవి.",
+    "aboutUs": "మా గురించి",
+    "contact": "సంప్రదించండి",
+    "helpCenter": "సహాయ కేంద్రం",
+    "ourServices": "మా సేవలు",
+    "governmentSchemes": "ప్రభుత్వ పథకాలు",
+    "careers": "ఉద్యోగ అవకాశాలు",
+    "privacyPolicy": "గోప్యతా విధానం",
+    "termsOfService": "సేవా నిబంధనలు",
+    "sitemap": "సైట్‌మ్యాప్"
+  }
+}

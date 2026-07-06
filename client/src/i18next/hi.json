@@ -1,0 +1,96 @@
+{
+  "navbar": {
+    "logo": "किसानसेतु",
+    "home": "होम",
+    "about": "हमारे बारे में",
+    "chatbot": "चैटबॉट",
+    "services": "सेवाएं",
+    "contact": "संपर्क करें",
+    "loginRegister": "लॉगिन / रजिस्टर",
+    "language": "भाषा"
+  },
+  "hero": {
+    "title": "एक स्थायी भविष्य के लिए <span>किसानों</span> को सशक्त बनाना",
+    "subtitle": "पारंपरिक ज्ञान को आधुनिक तकनीक से जोड़कर किसानों के लिए समृद्धि और सभी के लिए स्थायी खाद्य प्रणाली बनाना",
+    "exploreServices": "हमारी सेवाएं देखें",
+    "governmentSchemes": "सरकारी योजनाएं"
+  },
+  "about": {
+    "title": "<span>FarmerSetu</span> के बारे में",
+    "description": "हम नवाचार के माध्यम से कृषि को बदलने, किसानों को अत्याधुनिक तकनीक, सरकारी सहायता और स्थायी कृषि पद्धतियों से जोड़ने के लिए समर्पित हैं।"
+  },
+  "contact": {
+    "title": "संपर्क करें",
+    "email": "support@farmersetu.com",
+    "phone": "+91 98765 43210",
+    "help": "help@farmersetu.com",
+    "certifications": "प्रमाणपत्र",
+    "quickLinks": "त्वरित लिंक",
+    "getInTouch": "संपर्क में रहें"
+  },
+  "quickLinks": {
+    "title": "त्वरित लिंक",
+    "aboutUs": "हमारे बारे में",
+    "contactUs": "संपर्क करें",
+    "privacyPolicy": "गोपनीयता नीति",
+    "termsOfService": "सेवा की शर्तें",
+    "helpCenter": "सहायता केंद्र"
+  },
+  "certifications": {
+    "title": "प्रमाणपत्र",
+    "iso": "ISO 9001:2015",
+    "isoDesc": "गुणवत्ता प्रबंधन प्रणाली",
+    "organic": "जैविक प्रमाणित",
+    "organicDesc": "स्थायी कृषि पद्धतियां",
+    "government": "सरकारी स्वीकृति प्राप्त",
+    "governmentDesc": "कृषि मंत्रालय"
+  },
+  "mission": {
+    "title": "हमारा मिशन",
+    "description": "किसानों को अत्याधुनिक तकनीक, सरकारी योजनाओं तक सरल पहुंच और उत्पादकता बढ़ाने वाली स्थायी कृषि पद्धतियों से सशक्त बनाकर कृषि में क्रांति लाना।",
+    "innovation": "नवाचार",
+    "innovationDesc": "अत्याधुनिक कृषि तकनीक",
+    "support": "सहायता",
+    "supportDesc": "24/7 किसान सहायता और मार्गदर्शन",
+    "sustainability": "स्थिरता",
+    "sustainabilityDesc": "पर्यावरण के अनुकूल कृषि समाधान"
+  },
+  "stats": {
+    "farmersConnected": "जुड़े हुए किसान",
+    "governmentSchemes": "सरकारी योजनाएं",
+    "statesCovered": "कवर किए गए राज्य",
+    "satisfactionRate": "संतुष्टि दर"
+  },
+  "services": {
+    "cropManagement": "फसल प्रबंधन",
+    "cropManagementDesc": "बेहतर उत्पादन के लिए स्मार्ट कृषि समाधान",
+    "financialAid": "वित्तीय सहायता",
+    "financialAidDesc": "ऋण और सब्सिडी तक पहुंच",
+    "digitalTools": "डिजिटल उपकरण",
+    "digitalToolsDesc": "आधुनिक कृषि अनुप्रयोग",
+    "training": "प्रशिक्षण",
+    "trainingDesc": "शैक्षणिक कार्यक्रम और कार्यशालाएं"
+  },
+  "footer": {
+    "logo": "FarmerSetu",
+    "description": "भारत भर में किसानों को स्थायी कृषि और बेहतर आजीविका के लिए तकनीक और ज्ञान से सशक्त बनाना।",
+    "quickLinks": "त्वरित लिंक",
+    "officeAddress": "कार्यालय का पता",
+    "headquarters": "FarmerSetu मुख्यालय",
+    "address1": "सेक्टर 44, गुरुग्राम",
+    "address2": "हरियाणा 122003, भारत",
+    "email": "ईमेल",
+    "companyName": "FarmerSetu",
+    "emailValue": "info@farmersetu.com",
+    "copyright": "© 2025 FarmerSetu. सर्वाधिकार सुरक्षित।",
+    "aboutUs": "हमारे बारे में",
+    "contact": "संपर्क करें",
+    "helpCenter": "सहायता केंद्र",
+    "ourServices": "हमारी सेवाएं",
+    "governmentSchemes": "सरकारी योजनाएं",
+    "careers": "करियर",
+    "privacyPolicy": "गोपनीयता नीति",
+    "termsOfService": "सेवा की शर्तें",
+    "sitemap": "साइटमैप"
+  }
+}
