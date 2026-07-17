@@ -36,8 +36,14 @@ const corsOptions = {
   optionsSuccessStatus: 200,
 };
 
-app.use(cors(corsOptions));
-app.options("/*", cors(corsOptions));
+const corsMiddleware = cors(corsOptions);
+app.use(corsMiddleware);
+app.use((req, res, next) => {
+  if (req.method === "OPTIONS") {
+    return corsMiddleware(req, res, () => res.sendStatus(200));
+  }
+  next();
+});
 
 
 
